@@ -10,16 +10,16 @@ const allProjectsInfo = [
     title: '@diy0r/nestjs-rabbitmq',
     des: 'Advanced RabbitMQ module for building NestJS microservices 🐇',
     categories: ['Nest.js', 'RabbitMQ'],
-    repo: 'https://github.com/DIY0R/file-graph',
-    link: 'https://npmjs.com/package/file-graph'
+    repo: 'https://github.com/DIY0R/nestjs-rabbitmq',
+    link: 'https://npmjs.com/package/@diy0r/nestjs-rabbitmq'
   },
   {
     id: '2',
     title: 'file-graph',
     des: 'Library for storing graphs in files and making queries to them.🔗',
     categories: ['Node.js', 'Graph theory'],
-    repo: 'https://github.com/DIY0R/nestjs-rabbitmq',
-    link: 'https://npmjs.com/package/@diy0r/nestjs-rabbitmq'
+    repo: 'https://github.com/DIY0R/file-graph',
+    link: 'https://npmjs.com/package/file-graph'
   },
   {
     id: '3',
