@@ -16,18 +16,18 @@ export const navItemsSelected: { [key: string]: NavItemHeaderAnimation } = {
     y: -3,
     w: '60px'
   },
+  '/blog': {
+    name: 'blog',
+    x: 123,
+    y: -3,
+    w: '60px'
+  },
   '/projects': {
     name: 'projects',
-    x: 130,
+    x: 182,
     y: -3,
-    w: '75px'
+    w: '80px'
   }
-  // '/blog': {
-  //   name: 'blog',
-  //   x: 209,
-  //   y: -3,
-  //   w: '50px',
-  // }
 };
 
 const LinksNav = () => {
