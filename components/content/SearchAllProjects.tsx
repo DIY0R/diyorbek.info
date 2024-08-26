@@ -8,28 +8,34 @@ const allProjectsInfo = [
   {
     id: '1',
     title: '@diy0r/nestjs-rabbitmq',
-    des: 'A custom library for NestJS Microservice RMQ',
-    categorys: ['nest.js', 'RabbitMQ'],
-
+    des: 'Advanced RabbitMQ module for building NestJS microservices 🐇',
+    categories: ['Nest.js', 'RabbitMQ'],
+    repo: 'https://github.com/DIY0R/file-graph',
+    link: 'https://npmjs.com/package/file-graph'
+  },
+  {
+    id: '2',
+    title: 'file-graph',
+    des: 'Library for storing graphs in files and making queries to them.🔗',
+    categories: ['Node.js', 'Graph theory'],
     repo: 'https://github.com/DIY0R/nestjs-rabbitmq',
     link: 'https://npmjs.com/package/@diy0r/nestjs-rabbitmq'
   },
   {
-    id: '2',
+    id: '3',
     title: 'kucheza',
-    des: `Messaging via terminal.  
+    des: `Messaging via terminal 🗯.
       TCP is used as the protocol. 
      Used in the /server clean architecture`,
-    categorys: ['node.js', 'tcp', ' typescript'],
-
+    categories: ['Node.js', 'TCP', ' Typescript'],
     repo: 'https://github.com/DIY0R/kucheza',
     link: 'https://github.com/DIY0R/kucheza'
   },
   {
-    id: '3',
+    id: '4',
     title: 'tacca 🌺',
     des: 'SSR in Nest.js solves the problems that arise during the development of such websites',
-    categorys: ['nest.js', 'ssr'],
+    categories: ['Nest.js', 'SSR'],
 
     repo: 'https://github.com/DIY0R/tacca',
     link: 'https://github.com/DIY0R/tacca'
@@ -40,7 +46,7 @@ const SearchAllProjects = () => {
   const [projectSearch, setProjectSearch] = useState<string>('');
 
   const resultSearch = allProjectsInfo.filter((project) =>
-    project.categorys.some((category) =>
+    project.categories.some((category) =>
       category.includes(projectSearch.toLowerCase())
     )
   );
@@ -77,16 +83,18 @@ const SearchAllProjects = () => {
       </AnimationContainer>
 
       <article className="w-full flex justify-center items-center content-center flex-wrap gap-6 mx-auto">
-        {resultSearch.map(({ id, title, des, categorys, repo, link }) => (
-          <CardProject
-            key={id}
-            title={title}
-            des={des}
-            categorys={categorys}
-            repo={repo}
-            link={link}
-          />
-        ))}
+        {resultSearch.map(
+          ({ id, title, des, categories: categorys, repo, link }) => (
+            <CardProject
+              key={id}
+              title={title}
+              des={des}
+              categorys={categorys}
+              repo={repo}
+              link={link}
+            />
+          )
+        )}
       </article>
     </>
   );
