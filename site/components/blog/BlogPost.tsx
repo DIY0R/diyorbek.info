@@ -17,11 +17,10 @@ const BlogPost = ({ params }: { params: { title: string } }) => {
   useEffect(() => {
     getTitles();
   }, []);
-  console.log(post);
   return (
     <SectionContainer>
       <div
-        className="flex flex-col gap-6 markdown"
+        className="flex flex-col gap-5 markdown"
         style={{ height: '100%', color: 'white' }}
       >
         <Markdown

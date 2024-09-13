@@ -23,7 +23,7 @@ const LinksMenu = [
   }
 ];
 
-const LinksMenuNav = () => {
+const LinksMenuNav = ({ toggleMenu }: { toggleMenu: () => void }) => {
   return (
     <>
       {LinksMenu.map(({ name, path, delay }) => (
@@ -32,7 +32,7 @@ const LinksMenuNav = () => {
           className="border-gray-700 text-gray-100 text-sm font-semibold"
           style={{ transitionDelay: delay }}
         >
-          <Link href={path} className="pb-4">
+          <Link href={path} onClick={toggleMenu} className="pb-4">
             {name}
           </Link>
         </li>

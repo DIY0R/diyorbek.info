@@ -10,7 +10,7 @@ app.use(cors());
 app.use('/contents', express.static(pathContents));
 app.use('/titles', async (req, res) => {
   const fileList = await fsp.readdir(pathContents);
-  res.json(fileList);
+  res.json(fileList.reverse());
 });
 app.use('/', (_, response) => response.send('<h1>get out!</h1>'));
 

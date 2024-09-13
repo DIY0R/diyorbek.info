@@ -277,19 +277,21 @@ table {
   code {
     font-size: 8px;
     word-wrap: break-word; 
-    font-weight: 700;
+    font-weight: 100;
   }
   
   .markdown {
-    padding: 10px; /* Добавляем отступы внутри контейнера */
-    margin: 10px;  /* Отступы снаружи контейнера */
     font-size: 16px;
     overflow-x: auto;
-    box-sizing: border-box; /* Убедитесь, что padding учитывается в общей ширине элемента */
+    box-sizing: border-box;
   }
 }
 
+.markdown {
 
+  width: 110%;    
+
+}
 @media (min-width: 900px) {
   .darkBackgroundCirclesColors {
     background: radial-gradient(
