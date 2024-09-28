@@ -30,7 +30,7 @@ const Head = () => {
       <meta property="og:description" content={meta.description} />
       <meta property="og:title" content={meta.title} />
       <meta name="twitter:description" content={meta.description} />
-      <link rel="icon" href="/diyorbek.jpg" type="image/x-icon" />
+      <link rel="icon" href="/diyorbek.ico" type="image/x-icon" />
     </>
   );
 };

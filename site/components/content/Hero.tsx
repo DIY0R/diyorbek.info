@@ -19,7 +19,7 @@ const Hero = () => {
           alt="Diyorbek"
           height={176}
           width={176}
-          src="/diyorbek.jpg"
+          src="/diyorbek.ico"
           sizes="30vw"
           priority
           className="rounded-[8px] filter grayscale hover:grayscale-0 transition ease"
