@@ -97,7 +97,7 @@ const Footer = () => {
             <p className="text-blue-500">LinkedIn</p>
           </ExternalLink>
 
-          <ExternalLink href="https://twitter.com/DiyorbekJS">
+          <ExternalLink href="https://twitter.com/diyorbek_js">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
